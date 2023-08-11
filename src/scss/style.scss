@@ -1,0 +1,62 @@
+/* BS Abstract */
+@import "~bootstrap/scss/functions";
+@import "abstract/variables"; /*override bootstrap variables*/ 
+@import "~bootstrap/scss/mixins";
+
+/*BS reboot*/
+@import "~bootstrap/scss/reboot";
+
+/* BS grid */
+@import "~bootstrap/scss/grid";
+
+/*BS components*/ 
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/transitions";
+
+/*plugins*/
+@import "~slick-carousel/slick/slick.css";
+// @import "~slick-carousel/slick/slick-theme.css";
+@import "~select2/src/scss/core.scss";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import "~nouislider/dist/nouislider.css";
+
+
+@import "functions/functions";
+
+/*base custom*/ 
+@import "base/fonts";
+@import "base/typography";
+@import "base/grid";
+@import "base/helpers";
+// @import "base/typography";
+
+@import "components/buttons";
+@import "components/input";
+@import "components/select";
+@import "components/header";
+@import "components/main-slider";
+@import "components/main-discount";
+@import "components/main-about";
+@import "components/main-reason";
+@import "components/main-sales";
+@import "components/main-map";
+@import "components/selection-appartament";
+@import "components/presentation";
+@import "components/hypothec";
+@import "components/main-gallery";
+@import "components/process";
+@import "components/about-builder";
+@import "components/documents";
+@import "components/footer";
+@import "components/filter";
+@import "components/modals/modal-docs";
+@import "components/modals/modal-call";
+// pages
+@import "pages/catalog";
+@import "pages/product-card";

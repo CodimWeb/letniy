@@ -1,0 +1,162 @@
+.presentation {
+    padding-top: rem(120);
+}
+
+.presentation-panel {
+    display: flex;
+    align-items: center;
+    padding: rem(39) rem(72) rem(44) rem(119);
+    background: #fff;
+    border-radius: rem(5);
+    box-shadow: 0px 0px rem(100) rgba(0, 0, 0, 0.1);
+}
+
+.presentation-left {
+    width: 41%;
+    max-width: 41%;
+    position: relative;
+}
+
+.presentation-play {
+    position: absolute;
+    top: rem(134);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(101);
+    height: rem(101);
+    border: rem(2) solid #fff;
+    border-radius: 50%;
+}
+
+.presentation-hint {
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    min-width: rem(292);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(24);
+    text-align: center;
+    color: #2D4652;
+    padding: rem(8) rem(20) rem(9);
+    border-radius: rem(8);
+    background: #fff;
+    
+    &:before {
+        content: '';
+        border-left: rem(10) solid transparent;
+        border-right: rem(10) solid transparent;
+        border-bottom: rem(15) solid #fff;
+        position: absolute;
+        left: 50%;
+        top: -14px;
+        transform: translateX(-50%);
+    }
+}
+
+.presentation-right {
+    width: 59%;
+    max-width: 59%;
+    padding-left: rem(116);
+}
+
+.presentation-right h3 {
+    margin-bottom: 0;
+}
+
+.presentation-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 rem(-11);
+}
+
+.presentation-col {
+    width: 50%;
+    max-width: 50%;
+    padding: 0 rem(11);
+    margin-top: rem(30);
+}
+
+@media (max-width: 1499px) {
+    .presentation-panel {
+        padding: rem(34) rem(30) rem(39) rem(60);
+    }
+
+    .presentation-right {
+        padding-left: rem(40);
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .presentation-play {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .presentation-panel {
+        padding: rem(30) rem(20) rem(39) rem(20);
+    } 
+    
+    .presentation-right {
+        padding-left: rem(30);
+    }
+}
+
+@media (max-width: 991px) {
+    .presentation {
+        padding-top: rem(20);
+    }
+
+    .presentation-panel {
+        display: block;
+    }
+
+    .presentation-left {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentation-right {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentation-right .h3 {
+        text-align: center;
+        margin: rem(20) 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .presentation-panel {
+        margin: 0 rem(-15);
+    }
+
+    .presentation-row {
+        flex-direction: column;
+    }
+
+    .presentation-col {
+        width: 100%;
+        max-width: 100%;
+        margin-top: rem(10);
+
+        &:nth-child(3) {
+            order: 4;
+        }
+
+        &:nth-child(4) {
+            order: 3;
+        }
+    }
+}
+

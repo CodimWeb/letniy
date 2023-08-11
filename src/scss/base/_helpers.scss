@@ -1,0 +1,21 @@
+.full-width {
+    width: 100%;
+}
+
+.transition-off * {
+    transition: none !important;
+}
+
+.mar-0 {
+    margin: 0;
+}
+
+.scroll-lock {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .d-none-mobile {
+        display: none;
+    }
+}

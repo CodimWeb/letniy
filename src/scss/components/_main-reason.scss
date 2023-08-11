@@ -1,0 +1,130 @@
+.main-reason {
+    padding: rem(120) 0 0; 
+}
+
+.main-reason__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(50);
+}
+
+.slider-gallery .slick-slide {
+    margin: 0 rem(11);
+}
+
+.slider-gallery .slick-item {
+    position: relative;
+    
+    border-radius: rem(10);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.main-reason .slider-gallery .slick-item {
+    width: rem(464) !important;
+    height: rem(399);
+}
+
+.reason-slide {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 rem(37) rem(30);
+    color: #fff;
+}
+
+.reason-slide__title {
+    font-size: rem(18);
+    line-height: rem(27);
+    font-weight: 700;
+    margin: 0;
+}
+
+.reason-slide__subtitle {
+    font-size: rem(15);
+    line-height: rem(22);
+    font-weight: 600;
+    margin: 0;
+}
+
+
+@media (max-width: 1499px) {
+    .main-reason .slider-gallery .slick-item {
+        width: rem(350) !important;
+        height: rem(320);
+    }
+}
+
+@media (max-width: 991px) {
+    .main-reason {
+        padding-top: rem(40);
+    }
+
+    .main-reason__title {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .main-reason__title .h2 {
+        margin-bottom: rem(30);
+    }
+
+    .main-reason .slider-gallery .slick-item {
+        width: 100% !important;
+    }
+
+    .main-reason .slick-dots {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: rem(10) 0 0;
+    }
+
+    .main-reason .slick-dots li {
+        margin: 0 rem(5)
+    }
+
+    .main-reason .slick-dots button {
+        font-size: 0px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: rem(14);
+        height: rem(14);
+        border-radius: 50%;
+        background: transparent;
+        border: rem(1) solid rgba(45, 70, 82, 0.5);
+    }
+
+    .main-reason .slick-dots .slick-active button {
+        background: #000;
+        border-color: #000;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-reason__title .h2 {
+        text-align: center;
+        margin-bottom: rem(20);
+    }
+
+    .reason-slide {
+        padding: rem(15);
+    }
+
+    .reason-slide__title {
+        font-size: rem(16);
+    }
+
+    .reason-slide__subtitle {
+        font-size: rem(12);
+    }
+}
+

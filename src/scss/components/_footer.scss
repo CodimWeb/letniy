@@ -1,0 +1,136 @@
+.footer {
+    padding: rem(30) 0;
+    border-top: rem(1) solid rgba(0,0,0, 0.15);
+}
+
+.footer .flex-row {
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: rem(77);
+}
+
+.footer-social {
+    padding: 0 rem(80) 0 rem(40);
+    border-left: rem(1) solid rgba(0,0,0, 0.15);
+    border-right: rem(1) solid rgba(0,0,0, 0.15);
+    margin-right: rem(67);
+}
+
+.footer-social p {
+    font-weight: 500;
+    color: #2D4652;
+    margin-bottom: rem(8);
+}
+
+.footer-social ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social ul li {
+    margin-right: rem(20);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer-social ul li a {
+    display: flex;
+}
+
+.footer-copy p {
+    margin-bottom: rem(8);
+}
+
+.footer-copy .link {
+    font-size: rem(16);
+}
+
+.footer-phone {
+    margin-left: auto;
+}
+
+.footer-phone a {
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: 1.49;
+    color: #000;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .footer-logo {
+        margin-right: rem(30);
+    }
+
+    .footer-social {
+        padding: 0 rem(30);
+        margin-right: rem(30);
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: rem(14) 0 rem(20);
+    }
+
+    .footer .flex-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footer-social {
+        order: 1;
+        border: none;
+    }
+
+    .footer-social p {
+        display: none;
+    }
+
+    .footer-social ul {
+        justify-content: center;
+    }
+
+    .footer-logo {
+        order: 3;
+        margin: rem(14) auto rem(6);
+    }
+
+    .footer-phone {
+        order: 2;
+        margin: rem(5) rem(-15) 0; 
+        text-align: center;
+        border-bottom: rem(1) solid rgba(0,0,0, 0.15);
+        padding-bottom: rem(12);
+    }
+
+    .footer-phone a {
+        font-size: rem(12);
+    }
+
+    .footer-copy {
+        order: 4;
+        text-align: center;
+    }
+
+    .footer-copy p {
+        font-size: rem(12);
+        margin: 0;
+    }
+
+    .footer-copy .link {
+        font-size: rem(12);
+    }
+}

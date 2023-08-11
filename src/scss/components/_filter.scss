@@ -1,0 +1,206 @@
+.filter {
+    padding: rem(46) rem(70) rem(70);
+    background: #F7F9FA;
+    border-radius: rem(10);
+}
+
+.filter-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: rem(24);
+}
+
+.filter-title {
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: 1.49;
+    color: #2D4652;
+}
+
+.filter-reset {
+    font-size: rem(16);
+    line-height: 1.49;
+    color: #00A7B3;
+    margin-bottom: rem(3);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: #0DBCC9;
+        text-decoration: none;
+    }
+
+    &:active {
+        color: #029FAA;
+    }
+}
+
+.filter .form-group {
+    margin-bottom: rem(24);
+}
+
+.filter-label {
+    margin-bottom: rem(12);
+}
+
+.filter-group-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-group-item {
+    flex: 1;
+}
+
+.filter-group-devider {
+    width: rem(10);
+    height: rem(1);
+    background: #2D4652;
+    margin: 0 rem(10);
+}
+
+.range-sliders {
+    margin-top: rem(12);
+    padding: 0 rem(6);
+}
+
+.noUi-horizontal {
+    height: rem(2);
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-connects {
+    background: #E9E9E9;
+}
+
+.noUi-horizontal .noUi-handle {
+    box-shadow: none;
+    width: rem(12);
+    height: rem(12);
+    right: rem(-6);
+    border-radius: 50%;
+    background: #fff;
+    border: rem(3) solid #00A7B3;
+
+    &:before,
+    &:after {
+        content: none;
+    }
+}
+
+.filter-group-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(10);
+
+    p {
+        margin: 0;
+    }
+}
+
+.filter-label {
+    color: #6c7d86;
+    opacity: 1;
+}
+
+.filter-label .filter-dropdown {
+    margin-left: rem(8);
+}
+
+.filter-dropdown {
+    display: inline-block;
+}
+
+.filter-dropdown .btn {
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    color: #00A7B3;
+    padding: 0;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 1.49;
+
+    svg {
+        margin-left: rem(4);
+
+        path {
+            stroke: #00A7B3;
+        }
+    }
+
+    &:after {
+        content: none;
+    }
+
+    &:hover {
+        color: #0DBCC9;
+        svg {
+            path {
+                stroke: #0DBCC9;
+            }
+        }
+    }
+
+    &:active {
+        color: #029FAA;
+        svg {
+            path {
+                stroke: #029FAA;
+            }
+        }
+    }
+}
+
+.filter-dropdown .dropdown-menu {
+    background: #fff;
+    border-radius: rem(3);
+}
+
+.filter-dropdown .dropdown-item {
+    color: #2D4652;
+    padding: rem(3) rem(8);
+    font-size: rem(14);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background: transparent;
+        color: #0DBCC9;
+    }
+
+    &:active {
+        background: transparent;
+        color: #029FAA;
+    }
+
+    &.active {
+        color: #00A7B3;
+        background: transparent;
+    }
+}
+
+.filter-view {
+    margin-bottom: rem(10);
+}
+
+.filter-floor-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-floor-container {
+    margin: 0 rem(-6) rem(6);
+}
+
+.filter-floor-container .btn-floor {
+    margin: 0 rem(6);
+    margin-bottom: rem(12);
+}
+
+.filter-send-wrap {
+    margin-top: rem(40);
+}
+
+
+

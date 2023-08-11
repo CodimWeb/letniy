@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="transition-off">
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header-panel">
+                    <div class="logo">
+                        <a href="#" class="logo-link">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse" id="header-collapse">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Акции</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Квартиры</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Подборка квартир</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header-sell">
+                                <p class="header-sell__label">Отдел продаж</p>
+                                <a href="tel:+78126059146" class="header-sell__phone">+7 (812) 605-91-46</a>
+                            </div>
+                        </div>
+                        <div class="navbar-call">
+                            <button type="button" class="btn btn-secondary navbar-btn-call" data-toggle="modal" data-target="#modal-call">
+                                <span class="navbar-btn-call-text">Заказать звонок</span>
+                                <svg class="navbar-btn-call-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.805 8.90167C8.58695 10.2754 9.7246 11.4131 11.0983 12.195L11.835 11.1633C11.9535 10.9974 12.1286 10.8807 12.3273 10.8353C12.526 10.7898 12.7345 10.8188 12.9133 10.9167C14.0919 11.5608 15.3935 11.9481 16.7325 12.0533C16.9415 12.0699 17.1365 12.1646 17.2788 12.3186C17.421 12.4726 17.5 12.6745 17.5 12.8842V16.6025C17.5 16.8088 17.4235 17.0078 17.2853 17.161C17.1471 17.3142 16.9569 17.4106 16.7517 17.4317C16.31 17.4775 15.865 17.5 15.4167 17.5C8.28333 17.5 2.5 11.7167 2.5 4.58333C2.5 4.135 2.5225 3.69 2.56833 3.24833C2.58938 3.04308 2.68582 2.85293 2.83899 2.71469C2.99216 2.57646 3.19117 2.49996 3.3975 2.5H7.11583C7.32547 2.49997 7.52741 2.57896 7.6814 2.72121C7.83539 2.86346 7.93011 3.05852 7.94667 3.2675C8.05185 4.60649 8.43923 5.90807 9.08333 7.08667C9.18122 7.26547 9.21018 7.47395 9.16472 7.67266C9.11927 7.87137 9.00255 8.04654 8.83667 8.165L7.805 8.90167ZM5.70333 8.35417L7.28667 7.22333C6.83732 6.25341 6.52946 5.22403 6.3725 4.16667H4.175C4.17 4.305 4.1675 4.44417 4.1675 4.58333C4.16667 10.7967 9.20333 15.8333 15.4167 15.8333C15.5558 15.8333 15.695 15.8308 15.8333 15.825V13.6275C14.776 13.4705 13.7466 13.1627 12.7767 12.7133L11.6458 14.2967C11.1906 14.1198 10.7483 13.9109 10.3225 13.6717L10.2742 13.6442C8.63965 12.7139 7.28607 11.3604 6.35583 9.72583L6.32833 9.6775C6.08909 9.25166 5.88024 8.80945 5.70333 8.35417Z" fill="#2D4652"/>
+                                </svg>
+                                    
+                            </button>
+                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#header-collapse" aria-controls="header-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg class="icon-burger" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 3.3335H17.5V5.00016H2.5V3.3335ZM2.5 9.16683H17.5V10.8335H2.5V9.16683ZM2.5 15.0002H17.5V16.6668H2.5V15.0002Z" fill="#2D4652"/>
+                            </svg>
+                            <svg class="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 8.66688L14.6669 4L16 5.33312L11.3331 10L16 14.6669L14.6669 16L10 11.3331L5.33312 16L4 14.6669L8.66688 10L4 5.33312L5.33312 4L10 8.66688Z" fill="#2D4652"/>
+                            </svg>      
+                        </button>
+                    </nav>
+                </div>    
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="container">
+                <div class="product-card__row">
+                    <div class="product-card__left">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="gallery-1">
+                                <div class="product-card__media">
+                                    <div class="product-card__image">
+                                        <img src="img/product-card-lg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="gallery-2">
+                                <div class="product-card__media">
+                                    <div class="product-card__image">
+                                        <img src="img/product-card-lg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="gallery-3">
+                                <div class="product-card__media">
+                                    <div class="product-card__image">
+                                        <img src="img/product-card-lg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="gallery-4">
+                                <div class="product-card__media">
+                                    <div class="product-card__image">
+                                        <img src="img/product-card-lg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs product-card__nav" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-product-tab" data-toggle="tab" href="#gallery-1" role="tab">2D</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-product-tab" data-toggle="tab" href="#gallery-2" role="tab">3D</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-product-tab text-sm" data-toggle="tab" href="#gallery-3" role="tab">Этаж</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-product-tab" data-toggle="tab" href="#gallery-4" role="tab">
+                                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1363 0.706974L29.2883 3.52304C29.5759 3.61241 29.7875 3.90386 29.7833 4.20516V24.6287C29.7833 25.0677 29.2896 25.4299 28.8705 25.2998L19.9278 22.5498L10.9851 25.2998C10.8501 25.3417 10.7023 25.3417 10.567 25.2998L1.41497 22.4837C1.13089 22.3953 0.920464 22.1102 0.919974 21.8126V1.3891C0.914081 0.946642 1.41031 0.575666 1.83285 0.706974L10.7755 3.45697L19.7182 0.706974C19.8682 0.657622 20.0389 0.689787 20.1363 0.706974ZM20.6313 2.34591V21.2841L28.3753 23.6602V4.72197L20.6313 2.34591ZM19.2235 2.34591L11.4795 4.72197V23.6602L19.2235 21.2841V2.34591ZM2.32749 2.34591V21.2841L10.0715 23.6602V4.72197L2.32749 2.34591Z"/>
+                                    </svg>        
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__right">
+                        <div class="product-card__info">
+                            <div class="product-card__info__header">
+                                <h3 class="h3">Апартаменты №2, 34.3 м²</h3>
+                                <p class="label">Литер №3, 12 этажей</p>    
+                            </div>
+                            <div class="product-card__info__body">
+                                <div class="apartaments-item__param">
+                                    <span>Корпус</span>
+                                    <span>3</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Секция</span>
+                                    <span>3</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Этаж</span>
+                                    <span>5</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Общая площадь</span>
+                                    <span>35.1 м²</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Жилая площадь</span>
+                                    <span>21.1 м²</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Сан. узел</span>
+                                    <span>Совмещённый</span>
+                                </div>
+                                <div class="apartaments-item__param">
+                                    <span>Отделка</span>
+                                    <span>Без отделки</span>
+                                </div>
+                            </div>
+                            <div class="product-card__info__footer">
+                                <p class="label">Цена</p>  
+                                <div class="product-card__info__price-wrap">
+                                    <div class="product-card__info__price">8 317 750 &#8381;</div>
+                                    <div class="product-card__info__old-price">8 317 750 &#8381;</div>
+                                </div>
+                                <div class="product-card__info__buttons">
+                                    <button class="btn btn-primary">Забронировать</button>
+                                    <button class="btn btn-call" data-toggle="modal" data-target="#modal-call">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.805 6.90167C6.58695 8.2754 7.7246 9.41305 9.09833 10.195L9.835 9.16333C9.95346 8.99745 10.1286 8.88073 10.3273 8.83528C10.526 8.78982 10.7345 8.81878 10.9133 8.91667C12.0919 9.56077 13.3935 9.94815 14.7325 10.0533C14.9415 10.0699 15.1365 10.1646 15.2788 10.3186C15.421 10.4726 15.5 10.6745 15.5 10.8842V14.6025C15.5 14.8088 15.4235 15.0078 15.2853 15.161C15.1471 15.3142 14.9569 15.4106 14.7517 15.4317C14.31 15.4775 13.865 15.5 13.4167 15.5C6.28333 15.5 0.5 9.71667 0.5 2.58333C0.5 2.135 0.5225 1.69 0.568333 1.24833C0.589379 1.04308 0.68582 0.852934 0.838991 0.714695C0.992163 0.576456 1.19117 0.499956 1.3975 0.5H5.11583C5.32547 0.499974 5.52741 0.57896 5.6814 0.721209C5.83539 0.863458 5.93011 1.05852 5.94667 1.2675C6.05185 2.60649 6.43923 3.90807 7.08333 5.08667C7.18122 5.26547 7.21018 5.47395 7.16472 5.67266C7.11927 5.87137 7.00255 6.04654 6.83667 6.165L5.805 6.90167ZM3.70333 6.35417L5.28667 5.22333C4.83732 4.25341 4.52946 3.22403 4.3725 2.16667H2.175C2.17 2.305 2.1675 2.44417 2.1675 2.58333C2.16667 8.79667 7.20333 13.8333 13.4167 13.8333C13.5558 13.8333 13.695 13.8308 13.8333 13.825V11.6275C12.776 11.4705 11.7466 11.1627 10.7767 10.7133L9.64583 12.2967C9.19055 12.1198 8.74834 11.9109 8.3225 11.6717L8.27417 11.6442C6.63965 10.7139 5.28607 9.36035 4.35583 7.72583L4.32833 7.6775C4.08909 7.25166 3.88024 6.80945 3.70333 6.35417Z"/>
+                                        </svg>
+                                        <span>Заказать звонок</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="h3">Варианты покупки</h3>
+                <div class="variants">
+                    <div class="variant-col">
+                        <div class="variant-item active">
+                            <div class="variant-icon">
+                                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-dark" fill-rule="evenodd" clip-rule="evenodd" d="M15.3803 13.4725C15.1849 12.92 14.8231 12.4416 14.3446 12.1033C13.8661 11.765 13.2945 11.5833 12.7085 11.5833V10.875H11.2918V11.5833C10.5404 11.5833 9.81971 11.8818 9.28836 12.4132C8.75701 12.9446 8.4585 13.6652 8.4585 14.4167C8.4585 15.1681 8.75701 15.8888 9.28836 16.4201C9.81971 16.9515 10.5404 17.25 11.2918 17.25V20.0833C10.6756 20.0833 10.1507 19.6902 9.95521 19.1391C9.9262 19.049 9.87941 18.9655 9.8176 18.8938C9.75579 18.822 9.68021 18.7634 9.59534 18.7213C9.51048 18.6793 9.41804 18.6547 9.3235 18.649C9.22896 18.6433 9.13424 18.6566 9.04494 18.6882C8.95564 18.7197 8.87357 18.7689 8.80359 18.8327C8.73361 18.8965 8.67714 18.9737 8.63752 19.0597C8.59791 19.1458 8.57594 19.2389 8.57293 19.3335C8.56992 19.4282 8.58592 19.5225 8.62 19.6109C8.81538 20.1634 9.17723 20.6417 9.65572 20.98C10.1342 21.3183 10.7058 21.5 11.2918 21.5V22.2083H12.7085V21.5C13.4599 21.5 14.1806 21.2015 14.712 20.6701C15.2433 20.1388 15.5418 19.4181 15.5418 18.6667C15.5418 17.9152 15.2433 17.1946 14.712 16.6632C14.1806 16.1318 13.4599 15.8333 12.7085 15.8333V13C13.0015 12.9999 13.2873 13.0907 13.5265 13.2598C13.7658 13.4289 13.9467 13.668 14.0444 13.9442C14.107 14.1214 14.2373 14.2664 14.4068 14.3474C14.4908 14.3876 14.5818 14.4108 14.6747 14.4157C14.7676 14.4207 14.8605 14.4073 14.9482 14.3763C15.036 14.3453 15.1167 14.2974 15.1859 14.2352C15.2551 14.173 15.3114 14.0978 15.3515 14.0139C15.3916 13.9299 15.4148 13.8389 15.4197 13.746C15.4247 13.6531 15.4113 13.5602 15.3803 13.4725ZM11.2918 13C10.9161 13 10.5558 13.1493 10.2901 13.4149C10.0244 13.6806 9.87516 14.0409 9.87516 14.4167C9.87516 14.7924 10.0244 15.1527 10.2901 15.4184C10.5558 15.6841 10.9161 15.8333 11.2918 15.8333V13ZM12.7085 20.0833C13.0842 20.0833 13.4446 19.9341 13.7102 19.6684C13.9759 19.4027 14.1252 19.0424 14.1252 18.6667C14.1252 18.2909 13.9759 17.9306 13.7102 17.6649C13.4446 17.3993 13.0842 17.25 12.7085 17.25V20.0833Z"/>
+                                    <path class="fill-dark" fill-rule="evenodd" clip-rule="evenodd" d="M4.31686 2.10654C6.05511 1.25583 8.90686 0.25 12.0278 0.25C15.0835 0.25 17.8602 1.21404 19.5892 2.05342L19.687 2.10087C20.2083 2.35871 20.6291 2.60238 20.9251 2.8L18.3086 6.625C24.3407 12.7917 29.0002 25.7479 12.0278 25.7479C-4.9446 25.7479 -0.410559 13.0269 5.67402 6.625L3.07444 2.8C3.2749 2.66896 3.52919 2.51667 3.83236 2.35517C3.98252 2.27442 4.14402 2.19154 4.31686 2.10725V2.10654ZM16.627 6.574L18.7215 3.51187C16.7736 3.65212 14.4559 4.10971 12.2247 4.75571C10.6309 5.21613 8.86011 5.146 7.22032 4.84354C6.8071 4.76693 6.39671 4.67574 5.98994 4.57012L7.34994 6.57258C10.2647 7.61029 13.7115 7.61029 16.627 6.574ZM6.53182 7.77958C9.94244 9.09708 14.0416 9.09708 17.4522 7.77817C18.8758 9.27891 20.0668 10.9844 20.9854 12.8378C21.943 14.7914 22.4644 16.7442 22.3794 18.4272C22.2972 20.0515 21.6583 21.4391 20.1991 22.4704C18.6783 23.545 16.1205 24.3312 12.0271 24.3312C7.92936 24.3312 5.35952 23.5584 3.82457 22.4959C2.35477 21.4773 1.70948 20.1088 1.61811 18.5066C1.52248 16.842 2.03248 14.899 2.98661 12.932C3.89682 11.0563 5.16686 9.25079 6.53182 7.77958ZM5.71723 3.02383C6.2839 3.19242 6.87607 3.33904 7.47673 3.45025C8.99965 3.73075 10.5268 3.77183 11.8301 3.39429C13.349 2.95183 14.8937 2.60384 16.4556 2.35233C15.1522 1.95992 13.6279 1.66667 12.0271 1.66667C9.58686 1.66667 7.31098 2.34738 5.71723 3.02383Z"/>
+                                </svg>    
+                            </div>
+                            <p class="variant-item__type sm">Ипотека</p>
+                            <p class="label">Без первоначального взноса</p>
+                        </div>
+                    </div>    
+                    <div class="variant-col">
+                        <div class="variant-item">
+                            <div class="variant-icon">
+                                <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="stroke-dark" d="M5.2625 17.3625L3.75 28.75L10 25L16.25 28.75L14.7375 17.35M18.75 10C18.75 14.8325 14.8325 18.75 10 18.75C5.16751 18.75 1.25 14.8325 1.25 10C1.25 5.16751 5.16751 1.25 10 1.25C14.8325 1.25 18.75 5.16751 18.75 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p class="variant-item__type sm">Военная Ипотека</p>
+                            <p class="label">В банке Дом.рф</p>
+                        </div>
+                    </div>
+                    <div class="variant-col">
+                        <div class="variant-item">
+                            <div class="variant-icon">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="stroke-dark" d="M20.8401 3.60987C20.3294 3.09888 19.7229 2.69352 19.0555 2.41696C18.388 2.14039 17.6726 1.99805 16.9501 1.99805C16.2276 1.99805 15.5122 2.14039 14.8448 2.41696C14.1773 2.69352 13.5709 3.09888 13.0601 3.60987L12.0001 4.66987L10.9401 3.60987C9.90843 2.57818 8.50915 1.99858 7.05012 1.99858C5.59109 1.99858 4.19181 2.57818 3.16012 3.60987C2.12843 4.64156 1.54883 6.04084 1.54883 7.49987C1.54883 8.95891 2.12843 10.3582 3.16012 11.3899L4.22012 12.4499L12.0001 20.2299L19.7801 12.4499L20.8401 11.3899C21.3511 10.8791 21.7565 10.2727 22.033 9.60523C22.3096 8.93777 22.4519 8.22236 22.4519 7.49987C22.4519 6.77738 22.3096 6.06198 22.033 5.39452C21.7565 4.72706 21.3511 4.12063 20.8401 3.60987V3.60987Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                            <p class="variant-item__type sm">Материнский капитал</p>
+                            <p class="label">За 1  ребенка 524 527 &#8381;, за 2 ребенка 693 144 &#8381;</p>
+                        </div>
+                    </div>    
+                </div>
+                <h3 class="h3">Рассчитайте ипотеку</h3>
+                <div class="hypothec-calc">
+                    <div class="hypothec-calc__left">
+                        <div class="hypothec-filter-wrap">
+                            <div class="filter">
+                                <div class="filter-body">
+                                    <div class="form-group">
+                                        <label for="" class="filter-label">Банк</label>
+                                        <select name="" id="" class="select-sm">
+                                            <option value="">Сбер Банк</option>
+                                            <option value="">Сбер Банк</option>
+                                            <option value="">Сбер Банк</option>
+                                            <option value="">Сбер Банк</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="filter-label">Стоимость</label>
+                                        <div class="filter-group-container">
+                                            <div class="filter-group-item">
+                                                <input type="text" class="form-control sm from-value" placeholder="От">
+                                            </div>
+                                            <div class="filter-group-devider"></div>
+                                            <div class="filter-group-item">
+                                                <input type="text" class="form-control sm to-value" placeholder="До">
+                                            </div>
+                                        </div>
+                                        <div class="range-sliders" data-min="6107300" data-max="22782727"></div>
+                                        <div class="filter-group-values">
+                                            <p class="sm">6 107 300</p>
+                                            <p class="sm">22 782 727</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="filter-label">Срок кредита</label>
+                                        <input type="text" class="form-control sm to-value" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="filter-label">Семейная ипотека</label>
+                                        <div class="filter-view">
+                                            <label class="checkbox">
+                                                <input type="radio" name="family">
+                                                <span>Да</span>
+                                            </label>
+                                        </div>
+                                        <div class="filter-view">
+                                            <label class="checkbox">
+                                                <input type="radio" name="family">
+                                                <span>Нет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="hypothec-calc__right">
+                        <div class="bank-card">
+                            <div class="bank-card-content">
+                                <p class="bank-card__result">Результаты расчета</p>
+                                <div class="bank-card__logo">
+                                    <img src="img/bank-card-logo.png" alt="">
+                                </div>
+                                <p class="bank-card__text">* Приведенные расчеты носят предварительный характер. Окончательный расчет суммы кредита и размер ежемесячного платежа производятся банком после предоставления полного комплекта документов и проведения оценки платежеспособности клиента</p>
+                                <div class="bank-card-condition">
+                                    <div class="condition-item">
+                                        <p class="conditions-item__label">Срок кредита</p>
+                                        <p>до 30 лет</p>
+                                    </div>
+                                    <div class="condition-item">
+                                        <p class="conditions-item__label">Ставка</p>
+                                        <p>5,85%</p>
+                                    </div>
+                                    <div class="condition-item">
+                                        <p class="conditions-item__label">Ежемесячный платеж от</p>
+                                        <p>28 824 &#8381;</p>
+                                    </div>
+                                </div>
+                                <div class="bank-card__form">
+                                    <input type="text" class="form-control phone-input" placeholder="+7(___) ___-__-__">
+                                    <button class="btn btn-primary btn-md">Подать заявку</button>
+                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>Я даю своё согласие на обработку  <a href="#" class="link link-dec">персональных данных</a></span>
+                                </label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="flex-row">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <p class="xs">Наши соц сети</p>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/footer-vk.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer-ok.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footerl-teleg.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer-youtube.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/footer-dzen.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copy">
+                    <p class="xs">© 2022. Застройщик ООО «СЗ Громитус» </p>
+                    <a href="#" class="link link-dec">Политика конфедециальности</a>
+                </div>
+                <div class="footer-phone">
+                    <a href="tel:+78126059146">+7 (812) 605-91-46</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-full-width fade modal-docs" id="modal-docs" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99999 5.58623L11.95 0.63623L13.364 2.05023L8.41399 7.00023L13.364 11.9502L11.95 13.3642L6.99999 8.41423L2.04999 13.3642L0.635986 11.9502L5.58599 7.00023L0.635986 2.05023L2.04999 0.63623L6.99999 5.58623Z" fill="#2D4652"/>
+                        </svg>    
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-docs__container">
+                        <h2>Шаблоны ДДУ</h2>
+                        <div class="docs-item">
+                            <div class="docs-item__text">Градостроительный план земельного участка ЖК Летний</div>
+                            <div class="docs-item__file">
+                                <div class="docs-item__file-ext">PDF, 7,69 МБ</div>
+                                <div class="docs-item__file-save">
+                                    <a href="#" class="docs-item__file-link">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 2.67277H15.5V0.956816H0.5V2.67277ZM8.83333 13.974V4.38872H7.16667V13.974L2.1075 8.7644L0.929167 9.97758L8 17.2584L15.0708 9.97843L13.8925 8.76526L8.83333 13.9723V13.974Z"/>
+                                        </svg>    
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="docs-item">
+                            <div class="docs-item__text">Информация о выданных заключениях о соответствии застройщика
+                                и проектной декларации треованиям 214-Ф3, №23-002008 ЖК Летний</div>
+                            <div class="docs-item__file">
+                                <div class="docs-item__file-ext">PDF, 7,69 МБ</div>
+                                <div class="docs-item__file-save">
+                                    <a href="#" class="docs-item__file-link">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 2.67277H15.5V0.956816H0.5V2.67277ZM8.83333 13.974V4.38872H7.16667V13.974L2.1075 8.7644L0.929167 9.97758L8 17.2584L15.0708 9.97843L13.8925 8.76526L8.83333 13.9723V13.974Z"/>
+                                        </svg>    
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="docs-item">
+                            <div class="docs-item__text">Градостроительный план земельного участка ЖК Летний</div>
+                            <div class="docs-item__file">
+                                <div class="docs-item__file-ext">PDF, 7,69 МБ</div>
+                                <div class="docs-item__file-save">
+                                    <a href="#" class="docs-item__file-link">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 2.67277H15.5V0.956816H0.5V2.67277ZM8.83333 13.974V4.38872H7.16667V13.974L2.1075 8.7644L0.929167 9.97758L8 17.2584L15.0708 9.97843L13.8925 8.76526L8.83333 13.9723V13.974Z"/>
+                                        </svg>    
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="docs-item">
+                            <div class="docs-item__text">Градостроительный план земельного участка ЖК Летний</div>
+                            <div class="docs-item__file">
+                                <div class="docs-item__file-ext">PDF, 7,69 МБ</div>
+                                <div class="docs-item__file-save">
+                                    <a href="#" class="docs-item__file-link">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 2.67277H15.5V0.956816H0.5V2.67277ZM8.83333 13.974V4.38872H7.16667V13.974L2.1075 8.7644L0.929167 9.97758L8 17.2584L15.0708 9.97843L13.8925 8.76526L8.83333 13.9723V13.974Z"/>
+                                        </svg>    
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="docs-item">
+                            <div class="docs-item__text">Градостроительный план земельного участка ЖК Летний</div>
+                            <div class="docs-item__file">
+                                <div class="docs-item__file-ext">PDF, 7,69 МБ</div>
+                                <div class="docs-item__file-save">
+                                    <a href="#" class="docs-item__file-link">
+                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 2.67277H15.5V0.956816H0.5V2.67277ZM8.83333 13.974V4.38872H7.16667V13.974L2.1075 8.7644L0.929167 9.97758L8 17.2584L15.0708 9.97843L13.8925 8.76526L8.83333 13.9723V13.974Z"/>
+                                        </svg>    
+                                    </a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5f12449f-9a33-4211-b5df-92023e7912db&lang=ru_RU" type="text/javascript">
+    </script>
+</body>
+</html>

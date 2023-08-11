@@ -1,0 +1,125 @@
+.hypothec {
+    padding-top: rem(104);
+}
+
+.hypothec__title {
+    margin-bottom: rem(40);
+} 
+
+.hypothec .num-container {
+    color: #2D4652;
+}
+
+.hypothec .slick-slide {
+    margin-right: rem(11)
+}
+
+.hypothec-item {
+    background: #F7F9FA;
+    border: rem(1) solid rgba(0, 0, 0, 0.15);
+    border-radius: rem(10);
+    padding: rem(20) rem(20) rem(44) rem(44);
+}
+
+.hypothec-item__logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: rem(75);
+    margin-bottom: rem(20);
+}
+
+.hypothec-conditions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conditions-item {
+    margin-right: rem(30);
+}
+
+.conditions-item__label {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #2D4652;
+    opacity: 0.5;
+    margin-bottom: rem(4);
+}
+
+.hypothec-slider-nav {
+    margin-top: rem(36);
+}
+
+.hypothec-slider-nav .arrow-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.hypothec-slider-nav .num-container {
+    margin: 0 0 0 rem(6);
+}
+
+@media (max-width: 991px) {
+    .hypothec .slick-slide {
+        margin: 0 rem(5)
+    }
+}
+
+@media (max-width: 767px) {
+    .hypothec {
+        padding-top: rem(36);
+    }
+
+    .hypothec__title {
+        text-align: center;
+        margin-bottom: rem(24);
+    }
+
+    .hypothec-item {
+        padding: rem(20) rem(20) rem(32);
+    }
+
+    .conditions-item {
+        margin-right: rem(20);
+    }
+
+    .conditions-item__label {
+        font-size: rem(12);
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .conditions-item__value {
+        font-size: rem(16);
+    }
+
+    .hypothec .slick-dots {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: rem(5) 0 0;
+    }
+
+    .hypothec .slick-dots li {
+        margin: 0 rem(3)
+    }
+
+    .hypothec .slick-dots button {
+        font-size: 0px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: rem(8);
+        height: rem(8);
+        border-radius: 50%;
+        background: transparent;
+        border: rem(1) solid rgba(45, 70, 82, 0.5);
+    }
+
+    .hypothec .slick-dots .slick-active button {
+        background: #000;
+        border-color: #000;
+    }
+}

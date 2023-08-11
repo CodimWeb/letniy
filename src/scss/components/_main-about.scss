@@ -1,0 +1,148 @@
+.main-about {
+    padding: rem(125) 0 rem(85);
+    background: #F7F9FA;
+}
+
+.main-about__left {
+    width: 60%;
+    max-width: 60%;
+    padding-right: rem(66);
+}
+
+.home-info {
+    display: inline-flex;
+    border-top: rem(1) solid rgba(0,0,0, 0.15);
+    padding-top: rem(37);
+    margin-top: rem(45);
+}
+
+.home-info__item {
+    margin-right: rem(54);
+}
+
+.home-info__num {
+    font-size: rem(55);
+    line-height: rem(78);
+    color: #00A7B3;
+}
+
+.home-info__label {
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 600;
+}
+
+.main-about__right {
+    width: 40%;
+    max-width: 40%;
+}
+
+.complex {
+    padding: rem(36) rem(54);
+    border: rem(1) solid rgba(0,0,0, 0.15);
+    border-radius: rem(10);
+}
+
+.complex-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: rem(15);
+}
+
+.complex-item__icon {
+    width: rem(24);
+    margin-right: rem(12);
+}
+
+.complex-item__text {
+    flex: 1;
+    margin: 0;
+}
+
+@media (max-width: 1499px) {
+    .complex {
+        padding: rem(20);
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .home-info__item {
+        margin-right: rem(40);
+    }
+
+    .home-info__num {
+        font-size: rem(50);
+    }
+}
+
+@media (max-width: 991px) {
+    .main-about {
+        padding: rem(36) 0;
+        background: #fff;
+    }
+
+    .main-about .flex-row {
+        flex-wrap: wrap;
+    }
+
+    .main-about__left {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .main-about__left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-info {
+        display: flex;
+        padding-top: rem(24);
+        margin-top: rem(36);
+        margin-bottom: rem(40);
+    }
+
+    .main-about .main-about__right {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-about .home-info {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: rem(20);
+        margin: rem(28) 0;
+    }
+
+    .home-info__item {
+        margin-right: rem(20);
+        margin-bottom: rem(8);
+    }
+
+    .main-about .home-info__num {
+        font-size: rem(30);
+        line-height: 1.4;
+    }
+
+    .main-about .home-info__label {
+        font-size: rem(14);
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    .complex {
+        padding: rem(15) rem(17) rem(11)
+    }
+
+    .complex .h3 {
+        display: none;
+    }
+
+    .complex-item {
+        align-items: center;
+    }
+}

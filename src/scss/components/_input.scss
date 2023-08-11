@@ -1,0 +1,114 @@
+input {
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-control {
+    height: rem(60);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(19);
+    padding: rem(19) rem(30) rem(22);
+    color: rgba(0,0,0, 0.7);
+    border: rem(1) solid rgba(0,0,0, 0.15);
+    border-radius: rem(6);
+
+    &:hover,
+    &:focus {
+        border-color: #0DBCC9;
+        box-shadow: none;
+        outline: none;
+    }
+
+    &::placeholder {
+        color: rgba(0,0,0, 0.7);
+    }
+
+    &.sm {
+        height: rem(40);
+        font-size: rem(16);
+        line-height: 1.49;
+        font-weight: 400;
+        padding: rem(8) rem(16);
+    }
+}
+
+.checkbox {
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"] + span,
+.checkbox input[type="radio"] + span {
+    display: inline-block;
+    padding-left: rem(30);
+    color: #000;
+    font-size: rem(14);
+    line-height: rem(20);
+}
+
+.checkbox input[type="checkbox"]+ span:before,
+.checkbox input[type="radio"] + span:before {
+    content: "";
+    display: inline-block;
+    width: rem(18);
+    height: rem(18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    border: rem(1) solid rgba(0,0,0,0.15);
+    border-radius: rem(3);
+    background: #fff;
+}
+
+.checkbox input[type="checkbox"] + span:after,
+.checkbox input[type="radio"] + span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: rem(18);
+    height: rem(18);
+    background-image: url(../img/check-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + span:after,
+.checkbox input[type="radio"]:checked + span:after {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:disabled + span,
+.checkbox input[type="radio"]:disabled + span {
+    color: rgba(45, 70, 82, 0.4);
+
+    a {
+        opacity: 0.4;
+    }
+}
+
+.checkbox-md input[type="checkbox"] + span {
+    display: inline-block;
+    font-size: rem(16);
+    line-height: rem(20);
+}
+
+@media (max-width: 991px) {
+    .form-control {
+        height: rem(50);
+        padding: rem(10) rem(20);
+    }
+}
+

@@ -1,0 +1,248 @@
+.main-sales {
+    padding-top: rem(120);
+}
+
+.main-sales .nav-wrap {
+    transform: translateY(rem(36));
+}
+
+.main-sales__nav {
+    padding-bottom: rem(27);
+    border-bottom: rem(1) solid rgba(0, 0, 0, 0.15);
+    margin-bottom: rem(59);
+}
+
+.main-sales__row {
+    display: flex;
+}
+
+.main-sales__left {
+    width: 36%;
+    max-width: 36%;
+    margin-right: rem(115);
+}
+
+.main-sales .nav-tabs .nav-link:after {
+    bottom: rem(-33);
+}
+
+.sales-slider {
+    height: rem(453);  
+    border-radius: rem(10);
+    overflow: hidden;
+}
+
+.sales-slider .slick-item {
+    height: rem(453);   
+}
+
+.sales-slider .slick-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-sales .arrow-container {
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(30);
+}
+
+.main-sales .num-container {
+    color: #2D4652;
+}
+
+.main-sales__right {
+    flex: 1;
+}
+
+.main-sales-tab >.tab-pane {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.main-sales-tab >.tab-pane.active {
+    visibility: visible;
+    height: auto;
+}
+
+.main-sales__deadline {
+    color: #00A7B3;
+    margin-bottom: rem(6);
+}
+
+.main-sales__presentation {
+    display: flex;
+    margin: rem(36) 0 rem(18);
+}
+
+.main-sales__presentation__col {
+    width: rem(298);
+    margin-right: rem(23);
+}
+
+@media (max-width: 1499px) {
+    .main-sales__left {
+        margin-right: rem(90);
+    }
+
+    .sales-slider {
+        height: rem(400);
+    }
+    
+    .sales-slider .slick-item {
+        height: rem(400);   
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-sales__presentation {
+        flex-wrap: wrap;
+    }
+
+    .main-sales__presentation__col:last-child {
+        margin-top: rem(15);
+    }
+}
+
+@media (max-width: 991px) {
+    .main-sales {
+        padding-top: rem(36);
+    }
+
+    .main-sales .nav-wrap {
+        transform: translateY(0);
+    }
+
+    .main-sales__nav {
+        border: none;
+        padding: 0;
+        margin: 0 0 rem(24);
+    }
+
+    .main-sales__row {
+        display: block;
+    }
+
+    .main-sales__left {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .main-sales__nav .nav-item {
+        margin-right: rem(20);
+    }
+
+    .main-sales .nav-tabs .nav-link:after {
+        bottom: rem(-10);
+    }
+
+    .main-sales__deadline {
+        display: none;
+    }
+
+    .sales-slider {
+        height: auto;
+        margin-bottom: rem(20);
+    }
+
+    .sales-slider .slick-item {
+        // height: auto;
+    }
+
+    .main-sales .slick-dots {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: rem(10) 0 0;
+    }
+
+    .main-sales .slick-dots li {
+        margin: 0 rem(5)
+    }
+
+    .main-sales .slick-dots button {
+        font-size: 0px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: rem(14);
+        height: rem(14);
+        border-radius: 50%;
+        background: transparent;
+        border: rem(1) solid rgba(45, 70, 82, 0.5);
+    }
+
+    .main-sales .slick-dots .slick-active button {
+        background: #000;
+        border-color: #000;
+    }
+
+    .main-sales__presentation__col:last-child {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .main-sales .nav-wrap {
+        padding-bottom: rem(8);
+    }
+
+    .nav-tabs .nav-link {
+        font-size: rem(12);
+        font-weight: 500;
+    }
+
+    .sales-slider .slick-item {
+        height: auto;
+        border-radius: rem(10);
+        overflow: hidden;
+    }
+
+    .main-sales .slick-dots {
+        margin: rem(8) 0 0;
+    }
+
+    .main-sales .slick-dots li {
+        display: flex;
+        margin: 0 rem(3);
+    }
+
+    .main-sales .slick-dots button {
+        width: rem(8);
+        height: rem(8);
+    }
+
+    .main-sales__right .h3 {
+        font-size: rem(14);
+        margin-bottom: rem(8);
+    }
+
+    .main-sales__text {
+        font-size: rem(14);
+        margin-bottom: rem(6);
+    }
+
+    .main-sales__presentation__col {
+        width: 100%;
+        margin: 0;
+
+        &:first-child {
+            margin-bottom: rem(70);
+        }
+    }
+
+    .main-sales__presentation__col .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-sales__checkbox {
+        transform: translateY(rem(-121));
+    }
+}
